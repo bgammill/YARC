@@ -1,0 +1,20 @@
+<div class="navbar">
+	<div class="navbar-inner">
+		<a class="brand" href="#">Zodiac</a>
+		<ul class="nav">
+			<li>
+				<a href="#/">Rooms</a>
+			</li>
+			<li class="active">
+				<a href="#/create">Create</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="row">
+	<div class="span4">
+		<label class="control-label">name</label>
+		<input ng-model="newRoomName" type="text" placeholder="enter new room name" class="ctrl-textbox" name="roomNameText">
+		<button ng-click="createRoom()" class="btn btn-success ctrl-btn">go!</button>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="navbar">
+	<div class="navbar-inner">
+		<a class="brand" href="#">Zodiac</a>
+		<ul class="nav">
+			<li class="active">
+				<a href="#/">Rooms</a>
+			</li>
+			<li>
+				<a href="#/create">Create</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="row">
+	<div class="span12">
+		<div ng-controller="RoomCtrl">
+			<h1>currently in room: {{room.name}}</h1>
+			<ul>
+				<li ng-repeat="message in messages"><h4>{{message.user}}</h4> {{message.content}}</li>
+			</ul>
+			<form>
+				<input style="width: 500px;" placeholder="enter message..." type="text" ng-model="message" ui-keypress="{enter: 'addMessage()'}" />
+				<button ng-click="addMessage()">send</button>
+			</form>
+		</div>
+    </div>
+</div>
