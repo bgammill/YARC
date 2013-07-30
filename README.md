@@ -1,7 +1,7 @@
 <!--<img src="picture_coming_soon" align="right">-->
 
 # YARC
-A very primitive room-based, real-time chat app.
+A room-based, real-time chat app that utilizes [Firebase](https://www.firebase.com/), [Angular](http://angularjs.org/), and [Bootstrap](http://getbootstrap.com/).
 
 
 ### Why
